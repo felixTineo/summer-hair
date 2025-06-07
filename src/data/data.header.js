@@ -1,5 +1,5 @@
 export const header = {
-  logo: "/assets/img/header-logo.svg",
+  logo: "/assets/img/logo.png",
 };
 
 export const navItem = [
@@ -8,66 +8,16 @@ export const navItem = [
     path: "/",
   },
   {
-    name: "pages",
-    path: "#",
-    subNav: [
-      {
-        name: "About us",
-        path: "/about",
-      },
-      {
-        name: "FAQ",
-        path: "/faq",
-      },
-      {
-        name: "My Profile",
-        path: "/profile",
-      },
-      {
-        name: "Login",
-        path: "/login",
-      },
-      {
-        name: "Registration",
-        path: "/registration",
-      },
-      {
-        name: "Product",
-        path: "/product",
-      },
-      {
-        name: "Post",
-        path: "/blog/2633",
-      },
-      {
-        name: "Checkout",
-        path: "/checkout",
-      },
-      {
-        name: "404",
-        path: "/404",
-      },
-      {
-        name: "Cart",
-        path: "/cart",
-      },
-      {
-        name: "Wishlist",
-        path: "/wishlist",
-      },
-    ],
-  },
-  {
     name: "shop",
-    path: "/shop",
+    path: "#1",
   },
   {
     name: "Categories",
-    path: "/categories",
+    path: "#2",
   },
   {
     name: "blog",
-    path: "/blog",
+    path: "#3",
   },
   {
     name: "contact",
