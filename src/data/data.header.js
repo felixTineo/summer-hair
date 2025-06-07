@@ -4,15 +4,15 @@ export const header = {
 
 export const navItem = [
   {
-    name: "Home",
+    name: "Inicio",
     path: "/",
   },
   {
-    name: "shop",
+    name: "Tienda",
     path: "#1",
   },
   {
-    name: "Categories",
+    name: "Categorías",
     path: "#2",
   },
   {
@@ -20,7 +20,7 @@ export const navItem = [
     path: "#3",
   },
   {
-    name: "contact",
-    path: "/contact",
+    name: "Contacto",
+    path: "#4",
   },
 ];

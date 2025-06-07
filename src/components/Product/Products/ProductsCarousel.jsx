@@ -1,11 +1,11 @@
 import {
   SlickArrowPrev,
   SlickArrowNext,
-} from 'components/utils/SlickArrows/SlickArrows';
-import { CartContext } from 'pages/_app';
-import { useContext } from 'react';
-import Slider from 'react-slick';
-import { SingleProduct } from './SingleProduct/SingleProduct';
+} from "components/utils/SlickArrows/SlickArrows";
+import { CartContext } from "pages/_app";
+import { useContext } from "react";
+import Slider from "react-slick";
+import { SingleProduct } from "./SingleProduct/SingleProduct";
 
 export const ProductsCarousel = ({ products }) => {
   const { cart, setCart } = useContext(CartContext);
@@ -24,7 +24,7 @@ export const ProductsCarousel = ({ products }) => {
     slidesToScroll: 1,
     prevArrow: <SlickArrowPrev />,
     nextArrow: <SlickArrowNext />,
-    lazyLoad: 'progressive',
+    lazyLoad: "progressive",
     responsive: [
       {
         breakpoint: 1200,
@@ -53,7 +53,7 @@ export const ProductsCarousel = ({ products }) => {
   return (
     <>
       <Slider {...settings}>
-        {products.map((product) => (
+        {products.slice(0, 4).map((product) => (
           <SingleProduct
             addedInCart={Boolean(cart?.find((pd) => pd.id === product.id))}
             key={product.id}

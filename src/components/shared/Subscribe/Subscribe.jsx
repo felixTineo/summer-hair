@@ -2,29 +2,35 @@ export const Subscribe = () => {
   return (
     <>
       {/* <!-- BEGIN SUBSCRIBE --> */}
-      <div className='subscribe'>
-        <div className='wrapper'>
-          <div className='subscribe-form'>
-            <div className='subscribe-form__img'>
+      <div className="subscribe" style={{ marginBottom: "10rem" }}>
+        <div className="wrapper">
+          <div className="subscribe-form" style={{ padding: "2rem" }}>
+            <div className="subscribe-form__img">
               <img
-                src='/assets/img/subscribe-img.png'
-                className='js-img'
-                alt=''
+                src="/assets/img/p7.png"
+                // className="js-img"
+                alt=""
+                width={150}
               />
             </div>
             <form>
-              <h3>Stay in touch</h3>
-              <p>Nourish your skin with toxin-free cosmetic roducts.</p>
-              <div className='box-field__row'>
-                <div className='box-field'>
+              <h3>Siguenos</h3>
+              <p>
+                Suscríbete a nuestro boletín para recibir las últimas noticias,
+                ofertas y consejos de cuidado del cabello. ¡Únete a nuestra
+                comunidad y mantente al día con todo lo relacionado con Summer
+                Hair!
+              </p>
+              <div className="box-field__row">
+                <div className="box-field">
                   <input
-                    type='email'
-                    className='form-control'
-                    placeholder='Enter your email'
+                    type="email"
+                    className="form-control"
+                    placeholder="Ingresa tu correo electrónico"
                   />
                 </div>
-                <button type='submit' className='btn'>
-                  subscribe
+                <button type="submit" className="btn">
+                  subscribir
                 </button>
               </div>
             </form>

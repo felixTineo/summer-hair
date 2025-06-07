@@ -7,15 +7,19 @@ export const Banner = () => {
       <div className="main-block load-bg">
         <div className="wrapper">
           <div className="main-block__content">
-            <span className="saint-text">Professional</span>
-            <h1 className="main-text">Beauty &amp; Care</h1>
-            <p>
-              Nourish your skin with toxin-free cosmetic products. With the
-              offers that you can’t refuse.
+            <span className="saint-text">Orgánico</span>
+            <h1 className="main-text">Belleza &amp; Salud</h1>
+            <p
+              style={{
+                fontSize: "1.2rem",
+              }}
+            >
+              Creado con el amor de la naturaleza <br />
+              para cuidar tu cabello.
             </p>
 
-            <Link href="/shop">
-              <a className="btn">Shop now</a>
+            <Link href="/#">
+              <a className="btn">Comprar ahora</a>
             </Link>
           </div>
         </div>

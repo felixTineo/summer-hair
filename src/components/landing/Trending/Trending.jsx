@@ -1,12 +1,12 @@
-import { ProductsCarousel } from 'components/Product/Products/ProductsCarousel';
-import { SectionTitle } from 'components/shared/SectionTitle/SectionTitle';
-import { useEffect, useState } from 'react';
-import productData from 'data/product/product';
+import { ProductsCarousel } from "components/Product/Products/ProductsCarousel";
+import { SectionTitle } from "components/shared/SectionTitle/SectionTitle";
+import { useEffect, useState } from "react";
+import productData from "data/product/product";
 
 export const Trending = () => {
   const trendingProducts = [...productData];
   const [products, setProducts] = useState(trendingProducts);
-  const [filterItem, setFilterItem] = useState('makeup');
+  const [filterItem, setFilterItem] = useState("makeup");
 
   useEffect(() => {
     const newItems = trendingProducts.filter((pd) =>
@@ -17,53 +17,42 @@ export const Trending = () => {
 
   const filterList = [
     {
-      name: 'Make Up',
-      value: 'makeup',
+      name: "Make Up",
+      value: "makeup",
     },
     {
-      name: 'SPA',
-      value: 'spa',
+      name: "SPA",
+      value: "spa",
     },
     {
-      name: 'Perfume',
-      value: 'perfume',
+      name: "Perfume",
+      value: "perfume",
     },
     {
-      name: 'Nails',
-      value: 'nail',
+      name: "Nails",
+      value: "nail",
     },
     {
-      name: 'Skin care',
-      value: 'skin',
+      name: "Skin care",
+      value: "skin",
     },
     {
-      name: 'Hair care',
-      value: 'hair',
+      name: "Hair care",
+      value: "hair",
     },
   ];
   return (
     <>
       {/* <!-- BEGIN TRENDING --> */}
-      <section className='trending'>
-        <div className='trending-content'>
+      <section className="trending">
+        <div className="trending-content">
           <SectionTitle
-            subTitle='Cosmetics'
-            title='Trending products'
-            body='Nourish your skin with toxin-free cosmetic products. With the offers that you can’t refuse.'
+            subTitle="Productos"
+            title="En tendencia"
+            body="Cuida tu cuero cabelludo con nuestros productos de belleza orgánicos y de alta calidad. "
           />
-          <div className='tab-wrap trending-tabs'>
-            <ul className='nav-tab-list tabs'>
-              {filterList.map((item) => (
-                <li
-                  key={item.value}
-                  onClick={() => setFilterItem(item.value)}
-                  className={item.value === filterItem ? 'active' : ''}
-                >
-                  {item.name}
-                </li>
-              ))}
-            </ul>
-            <div className='products-items'>
+          <div className="tab-wrap trending-tabs">
+            <div className="products-items">
               <ProductsCarousel products={products} />
             </div>
           </div>

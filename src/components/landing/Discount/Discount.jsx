@@ -1,26 +1,26 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export const Discount = () => {
   return (
     <>
       {/* <!-- BEGIN DISCOUNT --> */}
       <div
-        className='discount js-img'
+        className="discount js-img"
         style={{ backgroundImage: `url('/assets/img/discount-bg.jpg')` }}
       >
-        <div className='wrapper'>
-          <div className='discount-info'>
-            <span className='saint-text'>Discount</span>
-            <span className='main-text'>
-              Get Your <span>50%</span> Off
+        <div className="wrapper">
+          <div className="discount-info">
+            <span className="saint-text">Descuentos</span>
+            <span className="main-text">
+              Consigue un <span>50%</span> menos
             </span>
             <p>
-              Nourish your skin with toxin-free cosmetic products. With the
-              offers that you can’t refuse.
+              ¡Aprovecha nuestra oferta especial! Obtén un 50% de descuento en
+              todos nuestros productos.
             </p>
 
-            <Link href='/shop'>
-              <a className='btn'>get now!</a>
+            <Link href="/">
+              <a className="btn">Contactanos!</a>
             </Link>
           </div>
         </div>
