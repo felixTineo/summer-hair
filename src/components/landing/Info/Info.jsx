@@ -54,8 +54,8 @@ export const Info = () => {
                 cabello.
               </span>
               <p>
-                Nuestra fórmula a base de coco está diseñada para ofrecer una
-                experiencia refrescante, saludable y libre de químicos
+                Nuestra fórmula a base de aguacate está diseñada para ofrecer
+                una experiencia refrescante, saludable y libre de químicos
                 agresivos. Creemos en la belleza consciente, en el poder de los
                 ingredientes naturales y en la importancia de cuidar tanto el
                 cabello como el medio ambiente. Cada producto refleja nuestro
